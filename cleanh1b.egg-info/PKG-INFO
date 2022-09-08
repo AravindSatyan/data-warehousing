@@ -1,0 +1,50 @@
+Metadata-Version: 2.1 
+Name: cleanh1b
+Version: 0.1
+Summary: A package for cleaning data frames.
+Home-page: https://github.com/AravindSatyan/h1b-data-cleaner
+Author: Aravind Satyanarayanan
+Author-email: aravind.bedean@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas 
+
+# Data Cleaner
+
+Data Cleaner is a Python package for cleaning data frames that you obtain from h1bdata.info
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install pip install cleanh1b
+
+
+usage
+
+import pandas as pd
+from data_cleaner import DataFrameProcessor
+
+# Load your DataFrame
+keyword='data engineer'
+keyword='+'.join(keyword.split())
+url='https://h1bdata.info/index.php?em=&job={}&city=&year=All+Years'.format(keyword)
+data = requests.get(url)
+soup=BeautifulSoup(data.content,'html.parser')
+table = soup.find('table')
+df_sub = pd.read_html(str(table))[0]
+
+# Create an instance of DataFrameProcessor
+processor = DataFrameProcessor(df)
+
+# Process the DataFrame
+processed_df = processor.process()
+
+# Display the processed DataFrame
+print(processed_df)
+
