@@ -7,12 +7,14 @@ Data Cleaner is a Python package for cleaning data frames that you obtain from h
 You can install the package using pip:
 
 ```bash
-pip install pip install cleanh1b
+pip install cleanh1b
 
 
-usage
+##usage
 
 import pandas as pd
+import requests
+from bs4 import BeautifulSoup
 from data_cleaner import DataFrameProcessor
 
 # Load your DataFrame
