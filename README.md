@@ -1,6 +1,6 @@
 # Data Cleaner 
 
-Data Cleaner is a Python package for cleaning data frames that you obtain from h1bdata.info
+Data Cleaner is a Python package for cleaning data frames that you obtain from h1bdata.info to find potential employers that can sponsor
 
 ## Installation
 
