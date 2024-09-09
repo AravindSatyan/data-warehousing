@@ -1,13 +1,13 @@
-# Data Cleaner 
+# Data Cleaner
 
-Data Cleaner is a Python package for cleaning data frames that you obtain from h1bdata.info to find potential employers that can sponsor
+Data Cleaner is a Python package for cleaning data frames that you obtain from h1bdata.info
 
 ## Installation
 
 You can install the package using pip:
 
 ```bash
-pip install pip install cleanh1b 
+pip install pip install cleanh1b
 
 
 usage
@@ -25,11 +25,13 @@ table = soup.find('table')
 df_sub = pd.read_html(str(table))[0]
 
 # Create an instance of DataFrameProcessor
-processor = DataFrameProcessor(df)
+processor = DataFrameProcessor(df_sub)
 
 # Process the DataFrame
 processed_df = processor.process()
 
+#if you want csv, then:
+processed_df.to_csv('outputfile.csv')
+
 # Display the processed DataFrame
 print(processed_df)
-
