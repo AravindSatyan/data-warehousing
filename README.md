@@ -50,5 +50,6 @@ Psychologist:
 ![image](https://github.com/user-attachments/assets/e0ab969d-c602-40ef-a8b3-0552f05a924f)
 
 Experienced Folks, listen up 📢 🏫 🌍
-Partner:
+
+Looking at becoming Partner? :
 ![image](https://github.com/user-attachments/assets/da558123-71dd-4318-a59c-fbb7d434262c)
